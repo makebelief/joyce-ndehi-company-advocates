@@ -49,3 +49,11 @@ Joyce Ndehi & Company Advocates · Telcom Exchange House, Biashara Street, 1st F
 The masthead uses the exact red of the firm's supplied logo (`#CF0000`), with the red logo on a white circular mount for contrast. Headings use a straightforward sans-serif typeface without italic styling. The hero and six service cards each use distinct illustrative photographs. The image sources and license are in `docs/IMAGE_SOURCES_V3.md`.
 
 **Before committing and deploying a new clone**, run `bash scripts/fetch-legal-photos.sh`, then `npm run check && npm run build`. Add the downloaded `assets/images/*.jpg` files to Git so the live site has no third-party image dependencies.
+
+## V4 production-demo release notes (October 2026)
+- Canonical SEO domain is `https://joyce-ndehi-company-advocates.vercel.app/` (the existing Vercel production alias). A custom `.co.ke` domain is not configured; replace the domain in the generator, sitemap, and robots once purchased and connected.
+- The interactive map on `/contact` uses OpenStreetMap, centered on Kiambu Town. **It is an area view, not a verified pin for Telcom Exchange House.** The adjacent Google Maps link searches the full supplied address and remains visible if the embed is blocked. Confirm the office's exact location before placing a marker.
+- Replaced the sliding contact rail with one accessible green WhatsApp button linking to the verified existing contact number.
+- SEO includes unique page titles and descriptions, canonical URLs, social share cards, LegalService/WebSite/WebPage structured data, breadcrumb markup on inner pages, sitemap, robots, and noindex for error pages.
+- The contact form uses `mailto:` intentionally and will only work when the visitor has an email application configured. An operational server-side form requires a verified mailbox/form provider and consent/privacy review.
+- For launch: approve firm text, address and all service claims; verify the map pin; test external contact links and mobile sizes; confirm Google Search Console property (and a verified Google Business Profile if appropriate). Check the deployment is the intended branch and never merge into `main` until the owner approves.

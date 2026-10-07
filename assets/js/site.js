@@ -25,15 +25,6 @@
     });
     window.matchMedia('(min-width: 1021px)').addEventListener('change', closeMenu);
   }
-  const rail = document.querySelector('.contact-rail');
-  const railToggle = document.querySelector('.rail-toggle');
-  if (rail && railToggle) {
-    railToggle.addEventListener('click', () => {
-      const collapsed = rail.classList.toggle('collapsed');
-      railToggle.setAttribute('aria-expanded', String(!collapsed));
-      railToggle.setAttribute('aria-label', collapsed ? 'Expand quick contacts' : 'Collapse quick contacts');
-    });
-  }
   const form = document.querySelector('[data-contact-form]');
   if (form) {
     const preselect = new URLSearchParams(window.location.search).get('matter');
