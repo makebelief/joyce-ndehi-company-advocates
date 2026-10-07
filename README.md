@@ -42,3 +42,10 @@ For changes to typography, spacing, layout and responsive behavior, edit `assets
 ## Live contact details used
 
 Joyce Ndehi & Company Advocates · Telcom Exchange House, Biashara Street, 1st Floor, Kiambu Town, Kenya · 0706 806 549 · joycendehiadvocates@gmail.com.
+
+
+## V3 brand and imagery refinements
+
+The masthead uses the exact red of the firm's supplied logo (`#CF0000`), with the red logo on a white circular mount for contrast. Headings use a straightforward sans-serif typeface without italic styling. The hero and six service cards each use distinct illustrative photographs. The image sources and license are in `docs/IMAGE_SOURCES_V3.md`.
+
+**Before committing and deploying a new clone**, run `bash scripts/fetch-legal-photos.sh`, then `npm run check && npm run build`. Add the downloaded `assets/images/*.jpg` files to Git so the live site has no third-party image dependencies.

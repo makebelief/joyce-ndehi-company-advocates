@@ -58,16 +58,101 @@ p{color:var(--muted)}.body-large{font-size:18px;line-height:1.75;color:#4b413e}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
 /* Joyce & K reference-led refresh: red navigation, centred photographic banner,
    image-led about, three columns of values, image-led services. */
-:root{--gold:#b71929;--gold2:#ce3140;--blue:#a51c2b;--navy:#68121b;--navy2:#4b1019;--ivory:#faf8f6}
+:root{--gold:#cf0000;--gold2:#cf0000;--blue:#a51c2b;--navy:#68121b;--navy2:#4b1019;--ivory:#faf8f6}
 .utility-bar{background:#431016!important;color:#fff}
-.site-header{background:#b21e2f!important;box-shadow:0 5px 25px #38121927;border-bottom:0!important}
+.site-header{background:#cf0000!important;box-shadow:0 5px 25px #38121927;border-bottom:0!important}
 .brand-type strong,.brand-type span,.desktop-nav a{color:white!important}.desktop-nav a:hover,.desktop-nav a.active{color:#ffe4d9!important}
 .header-cta{background:white!important;color:#9d1e2b!important;border-color:white!important}
 .reference-hero{min-height:630px;position:relative;isolation:isolate;display:flex;justify-content:center;align-items:center;text-align:center;color:white;overflow:hidden;background:#341014 url('/assets/media/joyce-mediation.webp') center 36%/cover no-repeat}
 .reference-hero:before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(20,8,11,.75),rgba(46,9,16,.56)),linear-gradient(0deg,rgba(22,5,8,.5),transparent 45%)}
-.reference-hero-inner{width:min(970px,calc(100% - 44px));padding:90px 0 110px}.reference-kicker{display:inline-block;font-size:.76rem;letter-spacing:.2em;font-weight:700;color:#ffe2db;margin-bottom:18px}.reference-hero h1{font-size:clamp(2.8rem,6.1vw,5.9rem);line-height:1.1;font-family:Georgia,serif;font-weight:600;letter-spacing:-.045em;margin:0 auto 22px}.reference-hero h1 em{color:#ffded6;font-weight:400}.reference-hero p{font-size:clamp(1.05rem,1.5vw,1.28rem);line-height:1.8;margin:0 auto 29px;max-width:740px;color:#f8f3f0}.reference-hero-actions{display:flex;gap:15px;justify-content:center;flex-wrap:wrap}.reference-hero .btn-primary{background:#b21e2f;border-color:#b21e2f;color:white}.reference-hero .btn-cream{background:white;color:#81202b}.reference-hero-scroll{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);font-size:.65rem;letter-spacing:.16em;font-weight:700;white-space:nowrap;opacity:.85}.reference-hero-scroll span{margin-left:10px}
-.reference-heading{text-align:center;margin-bottom:48px}.reference-heading h2{font-family:Georgia,serif;font-size:clamp(2rem,4vw,3.4rem);line-height:1.2;color:#241c1d;margin:13px auto 18px;max-width:850px}.reference-heading h2 em{color:#b21e2f;font-weight:400}.reference-rule{display:block;width:75px;height:3px;background:#b21e2f;margin:0 auto}.reference-about{background:#fff;padding:92px 0 105px}.reference-about-grid{display:grid;grid-template-columns:.93fr 1.07fr;gap:clamp(35px,6vw,94px);align-items:center}.reference-about-photo{min-height:490px;overflow:hidden;border-radius:6px;box-shadow:0 28px 45px #37151b25}.reference-about-photo img{width:100%;height:100%;min-height:490px;max-height:570px;object-fit:cover;object-position:center top}.reference-about-text h3{font-family:Georgia,serif;font-size:clamp(1.7rem,3vw,2.7rem);line-height:1.2;margin:18px 0 24px}.reference-about-text p{line-height:1.9;color:#595155}.reference-about-text blockquote{font-family:Georgia,serif;color:#8b2531;border-left:3px solid #b21e2f;padding:10px 0 10px 22px;margin:24px 0;font-size:1.3rem;font-style:italic}.reference-signature{display:block;font-family:Georgia,serif;color:#7b1b26;font-size:1.4rem;margin-bottom:24px}.reference-signature small{display:block;font:600 .68rem Inter,system-ui,sans-serif;letter-spacing:.15em;margin-top:7px;color:#7d7474}
+.reference-hero-inner{width:min(970px,calc(100% - 44px));padding:90px 0 110px}.reference-kicker{display:inline-block;font-size:.76rem;letter-spacing:.2em;font-weight:700;color:#ffe2db;margin-bottom:18px}.reference-hero h1{font-size:clamp(2.8rem,6.1vw,5.9rem);line-height:1.1;font-family:Georgia,serif;font-weight:600;letter-spacing:-.045em;margin:0 auto 22px}.reference-hero h1 em{color:#ffded6;font-weight:400}.reference-hero p{font-size:clamp(1.05rem,1.5vw,1.28rem);line-height:1.8;margin:0 auto 29px;max-width:740px;color:#f8f3f0}.reference-hero-actions{display:flex;gap:15px;justify-content:center;flex-wrap:wrap}.reference-hero .btn-primary{background:#cf0000;border-color:#cf0000;color:white}.reference-hero .btn-cream{background:white;color:#81202b}.reference-hero-scroll{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);font-size:.65rem;letter-spacing:.16em;font-weight:700;white-space:nowrap;opacity:.85}.reference-hero-scroll span{margin-left:10px}
+.reference-heading{text-align:center;margin-bottom:48px}.reference-heading h2{font-family:Georgia,serif;font-size:clamp(2rem,4vw,3.4rem);line-height:1.2;color:#241c1d;margin:13px auto 18px;max-width:850px}.reference-heading h2 em{color:#cf0000;font-weight:400}.reference-rule{display:block;width:75px;height:3px;background:#cf0000;margin:0 auto}.reference-about{background:#fff;padding:92px 0 105px}.reference-about-grid{display:grid;grid-template-columns:.93fr 1.07fr;gap:clamp(35px,6vw,94px);align-items:center}.reference-about-photo{min-height:490px;overflow:hidden;border-radius:6px;box-shadow:0 28px 45px #37151b25}.reference-about-photo img{width:100%;height:100%;min-height:490px;max-height:570px;object-fit:cover;object-position:center top}.reference-about-text h3{font-family:Georgia,serif;font-size:clamp(1.7rem,3vw,2.7rem);line-height:1.2;margin:18px 0 24px}.reference-about-text p{line-height:1.9;color:#595155}.reference-about-text blockquote{font-family:Georgia,serif;color:#8b2531;border-left:3px solid #cf0000;padding:10px 0 10px 22px;margin:24px 0;font-size:1.3rem;font-style:italic}.reference-signature{display:block;font-family:Georgia,serif;color:#7b1b26;font-size:1.4rem;margin-bottom:24px}.reference-signature small{display:block;font:600 .68rem Inter,system-ui,sans-serif;letter-spacing:.15em;margin-top:7px;color:#7d7474}
 .reference-values{position:relative;isolation:isolate;background:#641520 url('/assets/media/joyce-mediation.webp') center/cover no-repeat;padding:86px 0 98px;color:white}.reference-values-overlay{position:absolute;inset:0;z-index:-1;background:rgba(81,13,23,.92)}.reference-heading-light h2{color:white}.reference-heading-light .reference-rule{background:#ffddd7}.reference-values-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;text-align:center}.reference-values-grid article{padding:22px 30px}.reference-values-grid article+article{border-left:1px solid #ffffff50}.reference-value-icon{display:inline-flex;width:75px;height:75px;align-items:center;justify-content:center;border:1px solid #ffffff7a;border-radius:50%;margin-bottom:20px}.reference-values-grid h3{font-size:1.6rem;font-family:Georgia,serif;margin:4px 0 15px}.reference-values-grid p{color:#f2dfe2;line-height:1.85}
-.services-section{background:#f7f7f7}.services-section .section-heading{margin-bottom:36px}.service-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px}.service-card{padding:0!important;background:white!important;border:1px solid #e9e1e1!important;border-radius:7px!important;overflow:hidden;display:flex!important;flex-direction:column;box-shadow:0 10px 30px #3210160e;min-height:0!important}.service-card:hover{transform:translateY(-5px)}.service-picture{height:198px;position:relative;background:#522129;overflow:hidden}.service-picture img{width:100%;height:100%;object-fit:cover;filter:saturate(.75)}.service-picture:after{position:absolute;inset:0;content:'';background:linear-gradient(0deg,#42111a77,transparent 65%)}.service-picture .service-no{position:absolute;bottom:15px;left:20px;z-index:2;color:#fff;font-size:.76rem;letter-spacing:.14em}.service-content{padding:25px 25px 28px;display:flex;flex-direction:column;flex:1}.service-card .service-icon{position:static;display:inline-flex;width:44px;height:44px;align-items:center;justify-content:center;background:#fbebed;border-radius:50%;color:#aa1d2d;margin:0 0 13px}.service-card h3{font-family:Georgia,serif;font-size:1.38rem;color:#241b1c;margin:0 0 12px}.service-card p{color:#645e60;line-height:1.65;flex:1;margin:0 0 19px}.service-card .service-explore{color:#a91b2c;font-weight:700;font-size:.84rem;display:flex;align-items:center;gap:8px}
+.services-section{background:#f7f7f7}.services-section .section-heading{margin-bottom:36px}.service-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px}.service-card{padding:0!important;background:white!important;border:1px solid #e9e1e1!important;border-radius:7px!important;overflow:hidden;display:flex!important;flex-direction:column;box-shadow:0 10px 30px #3210160e;min-height:0!important}.service-card:hover{transform:translateY(-5px)}.service-picture{height:198px;position:relative;background:#522129;overflow:hidden}.service-picture img{width:100%;height:100%;object-fit:cover;filter:saturate(.75)}.service-picture:after{position:absolute;inset:0;content:'';background:linear-gradient(0deg,#42111a77,transparent 65%)}.service-picture .service-no{position:absolute;bottom:15px;left:20px;z-index:2;color:#fff;font-size:.76rem;letter-spacing:.14em}.service-content{padding:25px 25px 28px;display:flex;flex-direction:column;flex:1}.service-card .service-icon{position:static;display:inline-flex;width:44px;height:44px;align-items:center;justify-content:center;background:#fbebed;border-radius:50%;color:#aa1d2d;margin:0 0 13px}.service-card h3{font-family:Georgia,serif;font-size:1.38rem;color:#241b1c;margin:0 0 12px}.service-card p{color:#645e60;line-height:1.65;flex:1;margin:0 0 19px}.service-card .service-explore{color:#cf0000;font-weight:700;font-size:.84rem;display:flex;align-items:center;gap:8px}
 @media(max-width:900px){.reference-about-grid{grid-template-columns:1fr}.reference-about-photo{max-width:640px;margin:auto;width:100%}.reference-values-grid{gap:8px}.reference-values-grid article{padding:20px 15px}.service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:640px){.reference-hero{min-height:610px;background-position:center}.reference-hero-inner{padding:80px 0 100px}.reference-hero h1{font-size:clamp(2.6rem,10vw,3.7rem)}.reference-hero p{font-size:1rem}.reference-hero-actions{flex-direction:column;align-items:stretch}.reference-about{padding:65px 0}.reference-heading{margin-bottom:32px}.reference-about-photo,.reference-about-photo img{min-height:350px}.reference-values{padding:65px 0}.reference-values-grid{grid-template-columns:1fr}.reference-values-grid article+article{border-left:none;border-top:1px solid #ffffff40}.service-grid{grid-template-columns:1fr}}
+
+
+/* V3 / brand precision, contemporary typography, and distinct practice imagery. */
+:root{
+  --burgundy:#cf0000; /* sampled directly from original logo-red.png */
+  --wine:#a60000;
+  --wine-dark:#760000;
+  --gold:#cf0000;
+  --ink:#212121;
+  --muted:#55585c;
+  --serif:Arial,Helvetica,system-ui,sans-serif;
+  --sans:Arial,Helvetica,system-ui,sans-serif;
+}
+body{font-family:var(--sans);color:var(--ink);font-size:15px}
+h1,h2,h3,h4,.brand-type strong,.brand-type span,.reference-signature,.reference-about-text blockquote,.founder-statement h2,.prefooter h2,.reference-values-grid h3,
+.reference-about-text h3,.reference-heading h2,.reference-hero h1,.service-card h3,.welcome-aside h3,.profile-copy h2,.contact-information h2{
+  font-family:var(--sans)!important;font-style:normal!important;letter-spacing:-.025em;
+}
+h1,h2{font-weight:700}
+h1 em,h2 em,h3 em,em,.reference-hero h1 em,.reference-heading h2 em,.reference-about-text blockquote{
+  font-family:inherit!important;font-style:normal!important;font-weight:inherit!important;
+}
+.reference-hero h1{font-size:clamp(2.9rem,6.1vw,5.7rem);letter-spacing:-.04em;font-weight:800;line-height:1.13;max-width:920px}
+.reference-hero h1 em{color:#fff}
+.reference-heading h2{font-weight:750;letter-spacing:-.036em}
+.reference-heading h2 em{color:var(--burgundy)}
+.reference-about-text h3{font-weight:720;line-height:1.23}
+.reference-about-text blockquote{font-size:1.18rem;line-height:1.65;font-weight:600!important;color:#8a1414;border-left-color:var(--burgundy)}
+.reference-signature{font-size:1.12rem;font-weight:750;letter-spacing:0}
+.reference-signature small{font-family:inherit}
+.eyebrow,.reference-kicker,.nav-links{letter-spacing:.12em}
+.section-heading h2,.inner-hero h1,.prefooter h2{font-weight:750}
+.reference-values-grid h3,.service-card h3{font-weight:750}
+.utility-bar{background:#850000!important}
+.site-header{background:#cf0000!important;box-shadow:0 4px 18px rgba(58,6,6,.18)!important}
+.header-inner{height:92px;gap:18px}
+.brand{gap:13px;min-width:220px}
+.brand-logo-disc{flex-shrink:0;display:flex;align-items:center;justify-content:center;width:72px;height:72px;border-radius:50%;background:#fff;box-shadow:0 3px 8px rgba(48,0,0,.15);padding:5px;overflow:hidden}
+.brand .brand-logo-disc img{width:64px;height:64px;object-fit:contain;display:block}
+.brand-type strong{font-size:23px;font-weight:800!important;color:#fff!important;letter-spacing:-.04em}
+.brand-type span{color:#fff!important;font-weight:600;letter-spacing:.085em}
+.desktop-nav a{color:#fff!important;font-size:11px;letter-spacing:.03em}
+.desktop-nav a:hover,.desktop-nav a.active{color:#fff!important}
+.desktop-nav a.active:after{background:#fff}
+.header-cta{color:#cf0000!important;background:#fff!important;border-color:#fff!important;font-weight:800}
+.header-cta:hover{background:#ffefef!important}
+.menu-toggle{color:#fff!important}
+.mobile-nav{background:#b40000;color:#fff}
+.mobile-nav a{color:#fff}
+.mobile-nav a.active{background:#cf0000;color:#fff}
+.reference-hero{
+ background:#241514 url('/assets/images/legal-hero.jpg') center 48%/cover no-repeat;
+ min-height:620px;
+}
+.reference-hero:before{background:linear-gradient(90deg,rgba(16,9,10,.78),rgba(55,5,5,.63)),linear-gradient(0deg,rgba(25,2,2,.35),transparent 60%)}
+.reference-hero .btn-primary{background:#cf0000;border-color:#cf0000}
+.reference-hero .btn-primary:hover{background:#a80000;border-color:#a80000}
+.reference-hero .btn-cream{color:#8c0000}
+.reference-rule{background:#cf0000}
+.reference-about-text blockquote{border-left-color:#cf0000}
+.reference-values{background:#650808 url('/assets/images/litigation-justice.jpg') center 40%/cover no-repeat}
+.reference-values-overlay{background:rgba(87,4,4,.9)}
+.reference-heading-light h2,.reference-heading-light h2 em{color:white!important}
+.reference-heading-light .reference-rule{background:white}
+.reference-values-grid p{color:#fff0f0}
+.service-picture{background:#ded6d2}
+.service-picture img{object-fit:cover;filter:saturate(.93);transition:transform .3s}
+.service-card:hover .service-picture img{transform:scale(1.045)}
+.service-picture:after{background:linear-gradient(0deg,rgba(53,10,10,.49),transparent 68%)}
+.service-card .service-icon{background:#fff0f0;color:#cf0000}
+.service-card .service-explore{color:#cf0000}
+.service-card h3{font-size:1.3rem}
+.btn-primary{background:#cf0000;border-color:#cf0000}
+.btn-primary:hover{background:#a60000;border-color:#a60000}
+.btn-outline{border-color:#cf0000;color:#cf0000}
+.btn-outline:hover{background:#cf0000;color:#fff}
+.text-link{color:#cf0000}
+:focus-visible{outline-color:#cf0000}
+::selection{background:#cf0000;color:#fff}
+@media(max-width:1120px){.header-inner{gap:11px}.brand{min-width:195px}.desktop-nav{gap:16px}.brand-type strong{font-size:21px}.brand-logo-disc{height:64px;width:64px}.brand .brand-logo-disc img{height:57px;width:57px}}
+@media(max-width:900px){.brand{min-width:0}.brand-logo-disc{height:64px;width:64px}.brand .brand-logo-disc img{height:57px;width:57px}}
+@media(max-width:640px){.header-inner{height:77px}.brand{gap:10px}.brand-logo-disc{height:54px;width:54px;padding:3px}.brand .brand-logo-disc img{height:48px;width:48px}.brand-type strong{font-size:18px}.brand-type span{font-size:8px}.reference-hero{min-height:590px;background-position:57% center}.reference-hero h1{font-size:clamp(2.3rem,9vw,3.5rem)}.reference-hero-inner{padding:74px 0 94px}}
+
+/* Typography consistency across legacy sections as well. */
+body em,.hero-seal span,.welcome-aside-footer>span{font-style:normal!important;font-family:var(--sans)!important}
