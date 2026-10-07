@@ -2,4 +2,6 @@
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=()
-  Content-Security-Policy: default-src 'self'; img-src 'self' data: https://images.unsplash.com; style-src 'self' 'unsafe-inline'; script-src 'self'; media-src 'self'; frame-src https://www.google.com https://maps.google.com; connect-src 'self'; font-src 'self' data:; base-uri 'self'; form-action 'self' mailto:;
+  X-Frame-Options: DENY
+  Strict-Transport-Security: max-age=31536000
+  Content-Security-Policy: default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; img-src 'self' data:; style-src 'self'; font-src 'self'; script-src 'self' 'sha256-qev/uU6rzMH47kZXq8oRO2MfXfRnDmg758ma2+OO4MU='; media-src 'self'; frame-src https://www.google.com https://maps.google.com; connect-src 'self'; form-action 'self' mailto:; upgrade-insecure-requests
