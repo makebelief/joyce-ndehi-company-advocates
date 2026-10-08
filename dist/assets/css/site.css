@@ -171,3 +171,10 @@ body em,.hero-seal span,.welcome-aside-footer>span{font-style:normal!important;f
 @media(max-width:760px){.map-shell{grid-template-columns:minmax(0,1fr)}.map-visual iframe{min-height:290px}.map-visual{min-height:345px}.map-visual-footer{padding:14px 15px}.map-address{padding:31px 26px}}
 @media(max-width:480px){.whatsapp-fab{width:56px;height:56px;right:max(15px,env(safe-area-inset-right));bottom:max(17px,env(safe-area-inset-bottom))}.whatsapp-fab svg{width:32px;height:32px}.map-visual-footer{font-size:11px}}
 @media(prefers-reduced-motion:reduce){.whatsapp-fab{transition:none}}
+
+/* Approved advocate portrait: side-by-side layout, natural crop and responsive framing. */
+.reference-about-photo,.profile-portrait{background:#f0e6dc}
+.reference-about-photo img,.profile-portrait img{display:block;width:100%;object-fit:cover;object-position:center 22%;image-rendering:auto}
+.profile-portrait img{height:570px}
+@media(max-width:900px){.reference-about-photo{width:min(100%,570px)}}
+@media(max-width:540px){.reference-about-photo img{min-height:350px;max-height:480px;object-position:center 19%}.profile-portrait img{height:440px;object-position:center 16%}}
