@@ -178,3 +178,44 @@ body em,.hero-seal span,.welcome-aside-footer>span{font-style:normal!important;f
 .profile-portrait img{height:570px}
 @media(max-width:900px){.reference-about-photo{width:min(100%,570px)}}
 @media(max-width:540px){.reference-about-photo img{min-height:350px;max-height:480px;object-position:center 19%}.profile-portrait img{height:440px;object-position:center 16%}}
+
+
+/* Version 6 — preserved gown portrait, elegant circular advocacy portrait. */
+.profile-portrait.profile-portrait-circle{min-height:0;overflow:visible;background:transparent;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 18px 26px;isolation:isolate;position:relative}
+.profile-portrait-circle::before{content:"";position:absolute;width:min(100%,495px);height:calc(100% - 15px);background:radial-gradient(ellipse at center,rgba(207,0,0,.035),transparent 65%);z-index:-1}
+.profile-portrait-circle .portrait-medallion{position:relative;width:min(100%,430px);aspect-ratio:1;border-radius:50%;overflow:hidden;background:#f0e7df;border:8px solid #fff;outline:4px solid #cf0000;box-shadow:0 22px 48px rgba(49,12,12,.17),0 0 0 13px #f7e5e3;flex:none}
+.profile-portrait-circle .portrait-medallion img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 40%;border-radius:50%;image-rendering:auto}
+.profile-portrait-circle .profile-caption{position:static;background:transparent;color:var(--ink);padding:26px 4px 0;display:flex;flex-direction:column;align-items:center;text-align:center;gap:7px;width:100%}
+.profile-portrait-circle .profile-caption strong{font-family:var(--sans);font-size:clamp(25px,3vw,33px);font-weight:800;letter-spacing:-.025em;color:#292021}
+.profile-portrait-circle .profile-caption span{font-size:10px;letter-spacing:.11em;color:#cf0000;font-weight:800;line-height:1.7}
+.profile-portrait-circle .profile-portrait-label{display:inline-block;text-transform:uppercase;border-top:1px solid #dec9c8;padding:16px 12px 0;color:#84706f;font-size:10px;font-weight:800;letter-spacing:.18em;text-align:center;margin-top:17px}
+/* Rounded, filled icon treatment. All glyphs are local transparent PNGs, not outlines. */
+.ui-icon{display:inline-block;flex:none;object-fit:contain;vertical-align:middle;user-select:none;max-width:none}
+.utility-inner .ui-icon{width:13px;height:13px;filter:brightness(0) invert(1);opacity:.87}
+.site-header .menu-toggle .ui-icon{width:24px;height:24px;filter:brightness(0) invert(1)}
+.menu-toggle .ui-icon.close-icon{display:none}.menu-toggle[aria-expanded="true"] .ui-icon:first-child{display:none}.menu-toggle[aria-expanded="true"] .ui-icon.close-icon{display:block}
+.header-cta .ui-icon{width:15px;height:15px}
+.btn .ui-icon,.text-link .ui-icon{transition:transform .2s ease}
+.btn:hover .ui-icon,.text-link:hover .ui-icon{transform:translate(3px,-3px)}
+.btn-primary .ui-icon,.btn-outline:hover .ui-icon,.btn-cream .ui-icon{filter:brightness(0) invert(1)}
+.btn-cream .ui-icon{filter:none}
+.btn-outline .ui-icon{filter:none}
+.service-card .service-icon{width:59px;height:59px;display:inline-flex;align-items:center;justify-content:center;background:#fff6f6;color:#cf0000;border:1px solid #f3d9d9;border-radius:19px;box-shadow:inset 0 2px 1px #ffffff,0 8px 20px rgba(118,16,24,.08);margin-bottom:20px;transition:background .2s,transform .2s,box-shadow .2s}
+.service-card .service-icon .ui-icon{width:28px;height:28px}
+.service-card:hover .service-icon{transform:translateY(-3px);background:#ffe9eb;box-shadow:0 12px 25px rgba(118,16,24,.13)}
+.service-card .service-explore .ui-icon{width:14px;height:14px}
+.reference-value-icon{width:78px;height:78px;border:1px solid rgba(255,255,255,.58);background:rgba(255,255,255,.12);border-radius:22px;box-shadow:0 9px 25px rgba(42,2,4,.13)}
+.reference-value-icon .ui-icon{width:37px;height:37px;filter:brightness(0) invert(1)}
+.value-card>.ui-icon{display:block;width:36px;height:36px;margin-bottom:20px}
+.about-location>.ui-icon{width:44px;height:44px;margin:28px 0 19px;filter:brightness(0) invert(1);opacity:.91}
+.practice-detail-icon{display:grid;place-items:center;width:60px;height:60px;border:1px solid #efd0d0;background:#fff1f1;border-radius:17px;box-shadow:0 6px 16px rgba(118,16,24,.07)}
+.practice-detail-icon .ui-icon{width:31px;height:31px}
+.contact-method>span{display:grid;place-items:center;flex:none;width:49px;height:49px;border-radius:15px;background:#fff0f0;border:1px solid #f3d9d9;box-shadow:0 5px 14px rgba(93,14,14,.06);margin-top:0}
+.contact-method>span .ui-icon{width:24px;height:24px}
+.contact-inline .ui-icon{width:18px;height:18px}
+.footer-social a{width:39px;height:39px;border-radius:13px;background:rgba(255,255,255,.05);border:1px solid #776364}
+.footer-social .ui-icon{width:20px;height:20px;filter:brightness(0) invert(1)}
+.footer-social a:hover{background:#a60000;transform:translateY(-2px)}
+.profile-portrait-circle img:not(.ui-icon){max-width:none}
+@media(max-width:900px){.profile-portrait.profile-portrait-circle{padding:28px 28px 12px}.profile-portrait-circle .portrait-medallion{width:min(100%,425px)}}
+@media(max-width:540px){.profile-portrait.profile-portrait-circle{padding:26px 24px 10px}.profile-portrait-circle .portrait-medallion{width:min(100%,335px);border-width:6px;outline-width:3px;box-shadow:0 15px 35px rgba(49,12,12,.16),0 0 0 9px #f7e5e3}.profile-portrait-circle .portrait-medallion img{height:100%;object-position:center 42%}.profile-portrait-circle .profile-caption{padding-top:25px}.profile-portrait-circle .profile-caption span{font-size:9px}.reference-value-icon{width:67px;height:67px}.reference-value-icon .ui-icon{width:32px;height:32px}}
