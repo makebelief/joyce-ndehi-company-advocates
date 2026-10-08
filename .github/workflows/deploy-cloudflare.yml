@@ -1,0 +1,64 @@
+name: Deploy Joyce Ndehi Website
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  deployments: write
+
+concurrency:
+  group: joyce-ndehi-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Build and Deploy to Cloudflare
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build website
+        run: npm run build
+
+      - name: Verify production files
+        run: |
+          test -s dist/index.html
+          test -s dist/_headers
+          test -s dist/sitemap.xml
+          test -s dist/robots.txt
+
+          grep -Fq 'https://joycendehiadvocates.co.ke/' dist/index.html
+          grep -Fq 'https://joycendehiadvocates.co.ke/sitemap.xml' dist/robots.txt
+
+          if grep -RFq \
+            --include='*.html' \
+            --include='*.xml' \
+            --include='*.txt' \
+            'joyce-ndehi-company-advocates.vercel.app' dist; then
+            echo "ERROR: Old Vercel URLs found in production files."
+            exit 1
+          fi
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy dist --project-name=joyce-ndehi-company-advocates --branch=main
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
